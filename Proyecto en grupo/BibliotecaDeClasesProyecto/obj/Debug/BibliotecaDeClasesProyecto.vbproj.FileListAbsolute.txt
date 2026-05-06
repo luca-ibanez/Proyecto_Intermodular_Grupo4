@@ -8,3 +8,13 @@ C:\Users\School\Desktop\PROGRAM\Semana de practicas\Proyecto en grupo\Biblioteca
 C:\Users\School\Desktop\PROGRAM\Semana de practicas\Proyecto en grupo\BibliotecaDeClasesProyecto\obj\Debug\BibliotecaDeClasesProyecto.dll
 C:\Users\School\Desktop\PROGRAM\Semana de practicas\Proyecto en grupo\BibliotecaDeClasesProyecto\obj\Debug\BibliotecaDeClasesProyecto.xml
 C:\Users\School\Desktop\PROGRAM\Semana de practicas\Proyecto en grupo\BibliotecaDeClasesProyecto\obj\Debug\BibliotecaDeClasesProyecto.pdb
+C:\Users\School\Desktop\PROGRAM\Semana de practicas\Proyecto en grupo usando github\Proyecto_Intermodular_Grupo4\Proyecto en grupo\BibliotecaDeClasesProyecto\bin\Debug\BibliotecaDeClasesProyecto.dll
+C:\Users\School\Desktop\PROGRAM\Semana de practicas\Proyecto en grupo usando github\Proyecto_Intermodular_Grupo4\Proyecto en grupo\BibliotecaDeClasesProyecto\bin\Debug\BibliotecaDeClasesProyecto.pdb
+C:\Users\School\Desktop\PROGRAM\Semana de practicas\Proyecto en grupo usando github\Proyecto_Intermodular_Grupo4\Proyecto en grupo\BibliotecaDeClasesProyecto\bin\Debug\BibliotecaDeClasesProyecto.xml
+C:\Users\School\Desktop\PROGRAM\Semana de practicas\Proyecto en grupo usando github\Proyecto_Intermodular_Grupo4\Proyecto en grupo\BibliotecaDeClasesProyecto\obj\Debug\BibliotecaDeClasesProyecto.vbproj.AssemblyReference.cache
+C:\Users\School\Desktop\PROGRAM\Semana de practicas\Proyecto en grupo usando github\Proyecto_Intermodular_Grupo4\Proyecto en grupo\BibliotecaDeClasesProyecto\obj\Debug\BibliotecaDeClasesProyecto.Resources.resources
+C:\Users\School\Desktop\PROGRAM\Semana de practicas\Proyecto en grupo usando github\Proyecto_Intermodular_Grupo4\Proyecto en grupo\BibliotecaDeClasesProyecto\obj\Debug\BibliotecaDeClasesProyecto.vbproj.GenerateResource.cache
+C:\Users\School\Desktop\PROGRAM\Semana de practicas\Proyecto en grupo usando github\Proyecto_Intermodular_Grupo4\Proyecto en grupo\BibliotecaDeClasesProyecto\obj\Debug\BibliotecaDeClasesProyecto.vbproj.CoreCompileInputs.cache
+C:\Users\School\Desktop\PROGRAM\Semana de practicas\Proyecto en grupo usando github\Proyecto_Intermodular_Grupo4\Proyecto en grupo\BibliotecaDeClasesProyecto\obj\Debug\BibliotecaDeClasesProyecto.dll
+C:\Users\School\Desktop\PROGRAM\Semana de practicas\Proyecto en grupo usando github\Proyecto_Intermodular_Grupo4\Proyecto en grupo\BibliotecaDeClasesProyecto\obj\Debug\BibliotecaDeClasesProyecto.xml
+C:\Users\School\Desktop\PROGRAM\Semana de practicas\Proyecto en grupo usando github\Proyecto_Intermodular_Grupo4\Proyecto en grupo\BibliotecaDeClasesProyecto\obj\Debug\BibliotecaDeClasesProyecto.pdb

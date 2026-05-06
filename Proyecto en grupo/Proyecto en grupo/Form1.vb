@@ -30,17 +30,17 @@ Public Class Form1
 
         Dim fechaDeJornada As Date = #4/23/2026#
 
-        'MessageBox.Show(gestion.AñadirAlumno(dni, 1, "nombre", "apellido1", "apellido2", 1, "DES"))
+        MessageBox.Show(gestion.AñadirAlumno(dni, 1, "nombre", "apellido1", "apellido2", 1, "DES"))
 
-        'MessageBox.Show(gestion.AñadirJornada(fechaDeJornada, dni, duracion))
+        MessageBox.Show(gestion.AñadirJornada(fechaDeJornada, dni, duracion))
 
-        'MessageBox.Show(gestion.MostrarHorasDeAlumno("nombre"))
+        MessageBox.Show(gestion.MostrarHorasDeAlumno("nombre"))
 
         MessageBox.Show(gestion.MostrarAlumnosYSusHorasTotalesDeUnCiclo(1).ToString)
-        Dim resultado = gestion.MostrarAlumnosYSusHorasTotalesDeUnCiclo(1).GetType
-        If (resultado = ArrayList) Then
 
-        End If
+        MessageBox.Show(gestion.AñadirTarea(1, fechaDeJornada, 1, "Hola", 2.3))
+
+
 
 
     End Sub

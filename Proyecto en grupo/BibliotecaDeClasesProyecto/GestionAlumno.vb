@@ -63,7 +63,6 @@ Public Class GestionAlumno
 
         comprobar.Parameters.AddWithValue("@dni", dniAPasar)
 
-
         Try
             conexion.Open()
             personasConEseDNI = comprobar.ExecuteReader()
@@ -100,8 +99,6 @@ Public Class GestionAlumno
         crear.Parameters.AddWithValue("@fecha", fechaAPasar)
         crear.Parameters.AddWithValue("@dni", dniAPasar)
         crear.Parameters.AddWithValue("@duracion", duracionAPasar)
-
-
 
         Try
             conexion.Open()
@@ -140,7 +137,7 @@ Public Class GestionAlumno
         Return True
     End Function
 
-    ''Hacer una que muestre las horas de un alumno y otro que muestre desde una clase todos sus alumnos y horas
+    ''Hacer una funcion que muestre las horas de un alumno y otro que muestre desde una clase todos sus alumnos y horas
 
     ''Notas: Cuando solo quieres buscar un solo dato, usas ExecuteScalar() ya que solo devuelve un solo dato
     Public Function MostrarHorasDeAlumno(nombreAlumno As String)
@@ -153,8 +150,8 @@ Public Class GestionAlumno
 
         Try
             conexion.Open()
-            Dim h As Integer = buscarAlumno.ExecuteScalar()
-            Return h.ToString
+            Dim resultado As Integer = buscarAlumno.ExecuteScalar()
+            Return resultado.ToString
         Catch ex As Exception
             Return "Error al mirar las horas de un alumno: " & ex.Message
         Finally
@@ -190,10 +187,6 @@ Public Class GestionAlumno
 
     End Function
 
-
-
-
-
     ''Hay que hacer un delete tablas con todo, y recordar reiniciar todos los valores autonumericos para que no esten incorrectos.
     Public Function eliminarAlumnos(dni As String) As String
         Dim conexion As New SqlConnection(cadenaConexion)
@@ -215,5 +208,39 @@ Public Class GestionAlumno
 
 
     End Function
+
+
+    ''Ahora esto es sobre añadir la tarea
+    Public Function AñadirTarea(codigo As Integer, fecha As Date, dni As String, descripcion As String, duracion As Decimal) As String
+        Dim conexion As New SqlConnection(cadenaConexion)
+        Dim codigoAPasar = codigo
+        Dim fechaAPasar = fecha
+        Dim dniAPasar = dni
+        Dim descripcionAPasar = descripcion
+        Dim duracionAPasar = duracion
+
+
+        Dim lineaComando As String = "INSERT INTO TAREASREALIZADAS(CODIGOTAREA, FECHAJORNADA, DNI, DESCRIPCION, DURACION) VALUES (@codTarea, @fecha, @dni, @descripcion, @duracion)"
+        Dim crear As New SqlCommand(lineaComando, conexion)
+
+        crear.Parameters.AddWithValue("@codTarea", codigoAPasar)
+        crear.Parameters.AddWithValue("@fecha", fechaAPasar)
+        crear.Parameters.AddWithValue("@dni", dniAPasar)
+        crear.Parameters.AddWithValue("@descripcion", descripcionAPasar)
+        crear.Parameters.AddWithValue("@duracion", duracionAPasar)
+
+
+        Try
+            conexion.Open()
+            crear.ExecuteNonQuery()
+        Catch ex As Exception
+            Return "Error del añadir tarea: " & ex.Message
+        Finally
+            conexion.Close()
+        End Try
+
+        Return "Tarea insertada"
+    End Function
+
 
 End Class
