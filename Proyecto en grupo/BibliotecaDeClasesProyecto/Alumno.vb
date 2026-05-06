@@ -8,7 +8,6 @@
     Public Property Ciclo As Integer
     Public Property AliasDeBD As String
 
-
     Public Sub New(dni As String, horasTotales As Integer, nombre As String, apellido1 As String, apellido2 As String, ciclo As Integer, aliasDeBD As String)
         Me.Dni = dni
         Me.HorasTotales = horasTotales

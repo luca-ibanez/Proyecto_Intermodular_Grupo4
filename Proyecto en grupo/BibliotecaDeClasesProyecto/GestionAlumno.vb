@@ -212,6 +212,11 @@ Public Class GestionAlumno
 
     ''Ahora esto es sobre añadir la tarea
     Public Function AñadirTarea(codigo As Integer, fecha As Date, dni As String, descripcion As String, duracion As Decimal) As String
+        ''Chequear que no se pase de horas
+        If (duracion > 8) Then
+            Return "¡No puedes realizar mas de 8 horas!"
+        End If
+
         Dim conexion As New SqlConnection(cadenaConexion)
         Dim codigoAPasar = codigo
         Dim fechaAPasar = fecha
@@ -228,6 +233,7 @@ Public Class GestionAlumno
         crear.Parameters.AddWithValue("@dni", dniAPasar)
         crear.Parameters.AddWithValue("@descripcion", descripcionAPasar)
         crear.Parameters.AddWithValue("@duracion", duracionAPasar)
+
 
 
         Try
